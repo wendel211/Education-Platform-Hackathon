@@ -1,0 +1,228 @@
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b; /* Cor escura para o título */
+  margin-bottom: 2rem; /* Espaçamento inferior para separar do conteúdo */
+  text-align: center; /* Centraliza o título */
+}
+
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to bottom, #93c5fd, #e0f2fe); /* Blue gradient */
+  padding: 6rem 1.5rem; /* Mais espaçamento para dar sensação de espaço */
+  text-align: center;
+  color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 30rem; /* Altura fixa para manter o conteúdo centralizado */
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 1.75rem; /* Maior para impacto visual */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2; /* Melhor espaçamento entre as linhas */
+  text-transform: uppercase; /* Transformação em maiúsculas para destaque */
+  letter-spacing: 2px; /* Espaçamento entre as letras */
+  color: #1e293b;
+}
+
+.hero-description {
+  font-size: 1.125rem; /* Tamanho de fonte ajustado */
+  margin-bottom: 2rem;
+  line-height: 1.6; /* Maior espaçamento entre as linhas */
+  max-width: 900px; /* Limita o texto para não ficar muito largo */
+  margin-left: auto;
+  margin-right: auto;
+  color: #4b5563; /* Cor cinza suave */
+}
+
+.primary-button {
+  background-color: #0e0b0b; /* Cor azul vibrante */
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px; /* Botão arredondado */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase; /* Maiúsculas para o botão */
+  letter-spacing: 1px; /* Espaçamento entre as letras */
+}
+
+.primary-button:hover {
+  background-color: #020305; /* Cor azul mais escura no hover */
+  transform: scale(1.05); /* Pequeno aumento no tamanho para efeito */
+}
+
+/* Adicionando animação suave para o título */
+.hero-title {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Features Section */
+.feature-card {
+  background: #ffffff;
+  border-radius: 1.25rem; /* Slightly larger radius for a more modern look */
+  padding: 2rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* More subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  background-color: #dbeafe; /* Light blue */
+  padding: 1.25rem; /* Slightly larger padding for better visual balance */
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem; /* Space between icon and text */
+  width: 3.5rem; /* Defined size for the icon */
+  height: 3.5rem; /* Defined size for the icon */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 1rem; /* Adjusted padding for mobile */
+  }
+
+  .hero-content h1 {
+    font-size: 2.25rem; /* Smaller headline for mobile */
+  }
+
+  .hero-content p {
+    font-size: 1rem; /* Smaller text for mobile */
+    max-width: 90%; /* More space for text on small screens */
+  }
+
+  .feature-card {
+    padding: 1.5rem; /* Reduced padding for mobile */
+  }
+
+  .feature-icon {
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+  }
+}
+
+
+/* Benefícios Section */
+.benefits-section {
+  padding: 4rem 0;
+  background-color: #f9fafb; /* Fundo claro para destacar os cards */
+  text-align: center;
+  top: auto;
+}
+
+/* Grid de Benefícios */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Grade responsiva */
+  gap: 6rem; /* Espaçamento entre os cards */
+  justify-items: center; /* Centraliza os cards dentro da grid */
+  max-width: 1200px; /* Limita a largura máxima da grade */
+  margin: 0 auto; /* Centraliza a grade na tela */
+}
+
+/* BenefitCard */
+.benefit-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 350px; /* Limita o tamanho máximo do card */
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Header do BenefitCard */
+.benefit-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.benefit-header .group-hover\:scale-110 {
+  transition: transform 0.3s ease;
+}
+
+.benefit-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-left: 1rem;
+}
+
+/* Descrição do BenefitCard */
+.benefit-card p {
+  color: #4b5563; /* Cinza claro */
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Botão de Ação no BenefitCard */
+.benefit-action {
+  background-color: #1d4ed8; /* Azul */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-action:hover {
+  background-color: #2563eb; /* Azul mais escuro no hover */
+  transform: translateY(-2px);
+}
+
+.benefit-action .h-4, .benefit-action .w-4 {
+  margin-left: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr; /* Exibe os cards em uma coluna em telas pequenas */
+  }
+  .benefits-section {
+    padding: 2rem 0; /* Menor espaçamento nas telas menores */
+  }
+  .benefit-card {
+    padding: 1.5rem;
+  }
+}

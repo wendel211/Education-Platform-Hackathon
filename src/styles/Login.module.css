@@ -1,0 +1,253 @@
+/* Container principal */
+.loginContainer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #EBF4FF, #E0E7FF);
+  padding: 1rem;
+}
+
+/* Card de login */
+.loginCard {
+  width: 100%;
+  max-width: 28rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Maior sombra para um efeito mais elegante */
+  padding: 2.5rem;
+  animation: fadeIn 0.4s ease-out; /* Suaviza a animação */
+}
+
+/* Cabeçalho */
+.loginHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.loginTitle {
+  font-size: 1.75rem; /* Tamanho aumentado para destaque */
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 0.75rem; /* Aumenta o espaçamento para maior separação */
+  text-transform: uppercase; /* Maiúsculas para maior impacto */
+}
+
+.loginSubtitle {
+  color: #4B5563;
+  font-size: 1rem; /* Ajuste para um tamanho de fonte mais legível */
+}
+
+/* Conteúdo */
+.loginContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Alert de erro */
+.errorAlert {
+  padding: 1rem 1.5rem;
+  background-color: #FEE2E2;
+  border: 1px solid #FCA5A5;
+  border-radius: 0.375rem;
+  color: #DC2626;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* Wrapper para inputs */
+.inputWrapper {
+  position: relative;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 1rem; /* Distância maior para o ícone */
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #9CA3AF;
+}
+
+.inputField {
+  width: 90%;
+  padding: 0.75rem 1.25rem 0.75rem 2.75rem; /* Aumenta o padding para maior conforto */
+  border: 1px solid #D1D5DB;
+  border-radius: 0.375rem;
+  font-size: 1rem; /* Aumenta o tamanho da fonte */
+  line-height: 1.5rem;
+  color: #1F2937;
+  transition: border-color 0.15s ease-in-out;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #2563EB;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Botão de toggle da senha */
+.passwordToggle {
+  position: absolute;
+  right: 1rem; /* Distância maior do botão */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9CA3AF;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.passwordToggle:hover {
+  color: #6B7280;
+}
+
+.toggleIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* Link de esqueceu a senha */
+.forgotPasswordWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.forgotPasswordLink {
+  font-size: 0.875rem;
+  color: #2563EB;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.forgotPasswordLink:hover {
+  color: #1D4ED8;
+}
+
+/* Footer */
+.loginFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 0.75rem 1.25rem; /* Aumenta o tamanho do botão */
+  background-color: #2563EB;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem; /* Aumenta o tamanho da fonte */
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.loginButton:hover {
+  background-color: #1D4ED8;
+}
+
+.loginButton:disabled {
+  background-color: #93C5FD;
+  cursor: not-allowed;
+}
+
+/* Texto de signup */
+.signupText {
+  font-size: 1rem; /* Tamanho ajustado */
+  color: #4B5563;
+  text-align: center;
+}
+
+.signupLink {
+  color: #2563EB;
+  font-weight: 500;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.signupLink:hover {
+  color: #1D4ED8;
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+  .loginCard {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .loginTitle {
+    font-size: 1.5rem; /* Ajuste para telas menores */
+  }
+
+  .loginSubtitle {
+    font-size: 1rem;
+  }
+
+  .inputField {
+    font-size: 1rem; /* Ajusta o tamanho da fonte para a tela */
+  }
+
+  .loginButton {
+    font-size: 1rem;
+  }
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loginCard {
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Indicador de força da senha */
+.passwordStrength {
+  margin-top: -0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.strengthBar {
+  height: 4px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.strengthWeak {
+  width: 30%;
+  background-color: #EF4444;
+}
+
+.strengthGood {
+  width: 100%;
+  background-color: #10B981;
+}
+
+.strengthText {
+  font-size: 0.75rem;
+  color: #6B7280;
+}

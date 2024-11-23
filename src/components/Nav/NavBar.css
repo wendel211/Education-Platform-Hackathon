@@ -1,0 +1,144 @@
+/* Navbar Container */
+.homepage__navbar {
+  background-color: #F9FAFB; /* Light background for a modern look */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Increased shadow for depth */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 1rem 2rem; /* Increased padding for better spacing */
+  transition: background-color 0.3s ease-in-out; /* Smooth background transition */
+  height: 60px; /* Increased height for a more prominent navbar */
+}
+
+.homepage__navbar:hover {
+  background-color: #FFFFFF; /* Slightly lighter on hover */
+}
+
+/* Navbar Links */
+.nav-link {
+  color: #2D3748; /* Darker text for better contrast */
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem; /* Adjusted padding to space out links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease, transform 0.3s ease, padding 0.3s ease; /* Added padding transition */
+}
+
+.nav-link:hover {
+  color: #3f34dd; /* Purple shade for a more vibrant look */
+  transform: translateY(-4px); /* Increased hover effect */
+  padding-top: 0.6rem; /* Slight padding shift for a more dynamic effect */
+}
+
+/* Active Navbar Link */
+.nav-link.active {
+  color: #4C51BF; /* Active state color */
+  font-weight: 600; /* Slightly bold */
+  padding-top: 0.6rem; /* Active state padding */
+}
+
+/* Icon Buttons */
+.icon-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform on hover */
+}
+
+.icon-button:hover {
+  background-color: #E2E8F0; /* Subtle gray on hover */
+  border-radius: 8px;
+  transform: translateY(-2px); /* Smooth hover effect for icon buttons */
+}
+
+/* Logo Styling */
+.homepage__navbar .flex.items-center h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0a0c0e; /* Purple color for consistency */
+  transition: color 0.3s ease; /* Logo color transition */
+}
+
+.homepage__navbar .flex.items-center h1:hover {
+  color: #2B6CB0; /* Hover color for logo */
+}
+
+/* Flexbox Layout */
+.homepage__navbar .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.homepage__navbar .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homepage__navbar .flex.items-center {
+  display: flex;
+  align-items: center;
+}
+
+.homepage__navbar .flex.justify-between {
+  justify-content: space-between;
+}
+
+.homepage__navbar .flex.justify-between .nav-link {
+  margin-right: 1.5rem; /* More space between nav-links and icon buttons */
+}
+
+/* Responsiveness for Small Screens */
+@media (max-width: 768px) {
+  .homepage__navbar .nav-link {
+    font-size: 1rem;
+  }
+
+  .homepage__navbar .container {
+    padding: 0 1rem;
+  }
+
+  .homepage__navbar .flex.items-center.space-x-4 {
+    display: none; /* Hide user & settings buttons for small screens */
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 768px) {
+  .homepage__navbar .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .homepage__navbar .flex.items-center.space-x-8 {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .homepage__navbar .icon-button {
+    padding: 0.5rem;
+  }
+
+  .homepage__navbar .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+  .homepage__navbar .nav-link {
+    font-size: 1.125rem;
+  }
+
+  .homepage__navbar .flex.justify-between {
+    gap: 3rem;
+  }
+
+  .homepage__navbar .flex.items-center.space-x-8 {
+    gap: 3rem;
+  }
+}
