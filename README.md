@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este projeto é uma tela loginn e homepage desenvolvida em **React** e **TypeScript**, utilizando uma interface limpa e moderna com componentes responsivos e animações suaves. A tela de login inclui validação de campos, gerenciamento de senha, alertas de erro e indicações de força de senha.
+Este projeto é uma tela login e homepage desenvolvida em **React** e **TypeScript**, utilizando uma interface limpa e moderna com componentes responsivos e animações suaves. A tela de login inclui validação de campos, gerenciamento de senha, alertas de erro e indicações de força de senha.
 
 ### Tecnologias Utilizadas
 - **React** - Biblioteca JavaScript para construção de interfaces de usuário.
