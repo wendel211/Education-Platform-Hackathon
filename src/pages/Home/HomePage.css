@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: auto; /* Largura máxima para manter o conteúdo centralizado */
   height: 30rem; /* Altura fixa para manter o conteúdo centralizado */
   align-items: center;
 }

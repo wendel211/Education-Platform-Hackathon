@@ -4,7 +4,7 @@ import Footer from "../../components/Footer/Footer";
 import FeatureCard from "../../components/Feature/FeatureCard";
 import BenefitCard from "../../components/Benefit/BenefitCard";
 import { Brain, Rocket, Sparkles, GraduationCap, BookOpen } from "lucide-react";
-import "./Global.css";
+import "./HomePage.css";
 
 
 

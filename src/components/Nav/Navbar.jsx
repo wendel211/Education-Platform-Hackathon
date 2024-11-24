@@ -1,5 +1,6 @@
 import React from "react";
 import { User, Settings } from "lucide-react";
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 
 const Navbar = () => {
@@ -14,9 +15,9 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-20">
-            <a href="#" className="nav-link">Home</a>
-            <a href="#" className="nav-link">Aprendizagem</a>
-            <a href="#" className="nav-link">Disciplinas</a>
+            <Link to="/home" className="nav-link">Home</Link>
+            <Link to="/learning" className="nav-link">Disciplinas</Link>
+            <Link to="/subjects" className="nav-link">Aprendizagem</Link>
           </div>
 
           <div className="flex items-center space-x-4">

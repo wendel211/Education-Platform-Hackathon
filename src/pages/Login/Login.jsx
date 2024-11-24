@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Eye, EyeOff, Lock, User } from "lucide-react";
-import styles from "../styles/Login.module.css";
+import styles from "../Login/Login.module.css";
 
 const Login = () => {
   const navigate = useNavigate();
