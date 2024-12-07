@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Login from "./pages/Login/Login.jsx";
 import HomePage from "./pages/Home/HomePage.tsx";
 import Learning from "./pages/Learning/AdaptiveLearningPlatform.jsx";
+import Dashboard from "./pages/Dashboard/Dashboard.tsx";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         {/* Redirecionar para login se a rota for "/" */}
         <Route path="/" element={<Navigate to="/login" />} />
         {/* Rota para 404: Página não encontrada */}
+        <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="*" element={<h1>Página não encontrada</h1>} />
       </Routes>
     </Router>

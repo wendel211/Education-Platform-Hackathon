@@ -2,6 +2,8 @@
 .learning-platform {
   min-height: 100vh;
   background-color: #f3f4f6;
+  padding: 16px;
+  font-family: Arial, sans-serif;
 }
 
 

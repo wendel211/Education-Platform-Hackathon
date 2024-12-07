@@ -4,6 +4,8 @@
   color: #1e293b; /* Cor escura para o título */
   margin-bottom: 2rem; /* Espaçamento inferior para separar do conteúdo */
   text-align: center; /* Centraliza o título */
+  padding: 16px;
+  font-family: Arial, sans-serif;
 }
 
 
