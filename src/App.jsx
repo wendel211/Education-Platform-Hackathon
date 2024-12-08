@@ -15,7 +15,7 @@ function App() {
         {/* Rota para a tela HomePage */}
         <Route path="/home" element={<HomePage />} />
         {/* Rota para a tela de Aprendizagem */}
-        <Route path="/learning" element={<Learning />} />
+        <Route path="/learning" element={<Learning />} />y   
         {/* Redirecionar para login se a rota for "/" */}
         <Route path="/" element={<Navigate to="/login" />} />
         {/* Rota para 404: Página não encontrada */}

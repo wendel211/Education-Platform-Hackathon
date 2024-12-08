@@ -1,13 +1,27 @@
-/* Container principal */
-.loginContainer {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to bottom right, #EBF4FF, #E0E7FF);
-  padding: 1rem;
+html, body {
+  margin: 0; 
+  padding: 0; 
+  width: 100%; 
+  height: 100%; 
+  overflow-x: hidden; 
+  box-sizing: border-box; 
 }
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Garante altura total da tela */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+  background-image: url("../../assents/FUNDO.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; /* Remove qualquer scroll interno */
+  max-width: 100vw; /* Garante que o container não ultrapasse a largura da tela */
+  box-sizing: border-box;
+}
+
 
 /* Card de login */
 .loginCard {
